@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <div class="landing-page">
+            <div class="container">
+                <header>
+                    <div class="menu">
+                        
+                    </div>
+                    <div class="project_title">
+                        <img src="../img/avatar.png" alt="">
+                        <h1>Calculadora JavaScript</h1>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/luisgustavoTbarbosa">
+                            <img src="../img/github.svg" alt="icone GitHub">
+                        </a>
+                    </div>
+                </header>
+                <main>
+                    <section>
+                        <div id="resultado"></div>
+                        <input type="number" name="" id="recebe_num">
+                        <div class="operacoes">
+                            <input type="button" value="+" id="soma" onclick="operacao(1)">
+                            <input type="button" value="-" id="subtrai" onclick="operacao(2)">
+                            <input type="button" value="x" id="multiplica" onclick="operacao(3)">
+                            <input type="button" value="/" id="divide" onclick="operacao(4)">
+                        </div>
+                        <input type="button" value="=" id="calcular" onClick="calcular()">
+                    </section>
+                </main>
+            </div>
+        </div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
